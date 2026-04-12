@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upper Wear Guide | Ethnic Wear</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand-block">
+        <p class="eyebrow">Luxury Style Directory</p>
+        <h1>Upper Wear Guide</h1>
+        <p class="hero-text">
+          Explore men’s ethnic wear styles with lower wear, shoes, and watch pairing suggestions.
+        </p>
+      </div>
+
+      <nav class="top-nav">
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tshirts.html">T-Shirts</a></li>
+          <li><a href="shirts.html">Shirts</a></li>
+          <li><a href="jackets.html">Jackets</a></li>
+          <li><a href="hoodies.html">Hoodies</a></li>
+          <li><a href="blazers.html">Blazers</a></li>
+          <li><a href="ethnic.html">Ethnic</a></li>
+          <li><a href="winterwear.html">Winterwear</a></li>
+          <li><a href="sportswear.html">Sportswear</a></li>
+          <li><a href="officewear.html">Office Wear</a></li>
+          <li><a href="streetwear.html">Streetwear</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="guide-main">
+
+    <section class="guide-section" id="ethnic">
+      <div class="section-head">
+        <p class="section-kicker">Section 6</p>
+        <h2>Ethnic Wear</h2>
+        <p>Essential Indian upper wear options for weddings, festivals, and traditional events.</p>
+      </div>
+
+      <div class="guide-grid">
+        <article class="guide-card" onclick="openGuideModal(this)">
+          <div class="guide-image-wrap">
+            <img src="imgs/demoo22.jpg" alt="Kurta combination" class="guide-image">
+          </div>
+          <h3>Kurta</h3>
+          <p class="wear-type">Versatile festive and daily ethnic staple</p>
+          <p class="lower-wear">Lower wear: Pajama, churidar, jeans</p>
+          <p class="extra-suggestion">Shoes: Mojari or kolhapuri | Watch: Traditional minimal watch</p>
+        </article>
+
+        <article class="guide-card" onclick="openGuideModal(this)">
+          <div class="guide-image-wrap">
+            <img src="imgs/demoo23.jpg" alt="Sherwani combination" class="guide-image">
+          </div>
+          <h3>Sherwani</h3>
+          <p class="wear-type">Wedding and grand traditional attire</p>
+          <p class="lower-wear">Lower wear: Pajama, churidar, jeans</p>
+          <p class="extra-suggestion">Shoes: Embroidered mojari | Watch: Gold-tone dress watch</p>
+        </article>
+
+        <article class="guide-card" onclick="openGuideModal(this)">
+          <div class="guide-image-wrap">
+            <img src="imgs/demoo24.jpg" alt="Nehru Jacket combination" class="guide-image">
+          </div>
+          <h3>Nehru Jacket</h3>
+          <p class="wear-type">Elegant layered ethnic refinement</p>
+          <p class="lower-wear">Lower wear: Pajama, churidar, jeans</p>
+          <p class="extra-suggestion">Shoes: Loafers or mojari | Watch: Classic Indian occasion watch</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="guide-modal" id="guideModal">
+    <div class="guide-modal-panel">
+      <button class="close-btn" id="closeModalBtn" aria-label="Close details">&times;</button>
+      <div class="modal-image-wrap">
+        <img id="modalImage" src="" alt="" class="modal-image">
+      </div>
+      <p class="modal-label">Upper Wear Guide</p>
+      <h3 id="modalTitle"></h3>
+      <p id="modalType"></p>
+      <div class="modal-divider"></div>
+      <p id="modalLower"></p>
+      <p id="modalExtra"></p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>Luxury menswear direction, category by category.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upper Wear Guide | Shirts</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand-block">
+        <p class="eyebrow">Luxury Style Directory</p>
+        <h1>Upper Wear Guide</h1>
+        <p class="hero-text">
+          Explore men’s shirt styles with lower wear, shoes, and watch pairing suggestions.
+        </p>
+      </div>
+
+      <nav class="top-nav">
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tshirts.html">T-Shirts</a></li>
+          <li><a href="shirts.html">Shirts</a></li>
+          <li><a href="jackets.html">Jackets</a></li>
+          <li><a href="hoodies.html">Hoodies</a></li>
+          <li><a href="blazers.html">Blazers</a></li>
+          <li><a href="ethnic.html">Ethnic</a></li>
+          <li><a href="winterwear.html">Winterwear</a></li>
+          <li><a href="sportswear.html">Sportswear</a></li>
+          <li><a href="officewear.html">Office Wear</a></li>
+          <li><a href="streetwear.html">Streetwear</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="guide-main">
+
+    <section class="guide-section" id="shirts">
+      <div class="section-head">
+        <p class="section-kicker">Section 2</p>
+        <h2>Shirts</h2>
+        <p>From formal dressing to relaxed weekend outfits, shirts create polished styling options.</p>
+      </div>
+
+      <div class="guide-grid">
+        <article class="guide-card" onclick="openGuideModal(this)">
+          <div class="guide-image-wrap">
+            <img src="imgs/demoo6.jpg" alt="Formal Shirt combination" class="guide-image">
+          </div>
+          <h3>Formal Shirt</h3>
+          <p class="wear-type">Structured office and event staple</p>
+          <p class="lower-wear">Lower wear: Formal pants, chinos, jeans</p>
+          <p class="extra-suggestion">Shoes: Oxford shoes | Watch: Classic formal watch</p>
+        </article>
+
+        <article class="guide-card" onclick="openGuideModal(this)">
+          <div class="guide-image-wrap">
+            <img src="imgs/demoo7.jpg" alt="Casual Shirt combination" class="guide-image">
+          </div>
+          <h3>Casual Shirt</h3>
+          <p class="wear-type">Relaxed clean everyday layer</p>
+          <p class="lower-wear">Lower wear: Jeans, Formal pants, chinos</p>
+          <p class="extra-suggestion">Shoes: White sneakers | Watch: Casual metal watch</p>
+        </article>
+
+        <article class="guide-card" onclick="openGuideModal(this)">
+          <div class="guide-image-wrap">
+            <img src="imgs/demoo8.jpg" alt="Printed Shirt combination" class="guide-image">
+          </div>
+          <h3>Printed Shirt</h3>
+          <p class="wear-type">Bold summer or vacation style</p>
+          <p class="lower-wear">Lower wear: Jeans, chinos, trousers</p>
+          <p class="extra-suggestion">Shoes: Espadrilles or loafers | Watch: Lightweight fashion watch</p>
+        </article>
+
+        <article class="guide-card" onclick="openGuideModal(this)">
+          <div class="guide-image-wrap">
+            <img src="imgs/demoo9.jpg" alt="Linen Shirt combination" class="guide-image">
+          </div>
+          <h3>Linen Shirt</h3>
+          <p class="wear-type">Breathable premium warm-weather option</p>
+          <p class="lower-wear">Lower wear: Formal pants, chinos, jeans</p>
+          <p class="extra-suggestion">Shoes: Tan loafers | Watch: Beige strap minimal watch</p>
+        </article>
+
+        <article class="guide-card" onclick="openGuideModal(this)">
+          <div class="guide-image-wrap">
+            <img src="imgs/demoo10.jpg" alt="Denim Shirt combination" class="guide-image">
+          </div>
+          <h3>Denim Shirt</h3>
+          <p class="wear-type">Textured rugged casual classic</p>
+          <p class="lower-wear">Lower wear: Formal pants, chinos, jeans</p>
+          <p class="extra-suggestion">Shoes: Boots or sneakers | Watch: Brown strap rugged watch</p>
+        </article>
+
+        <article class="guide-card" onclick="openGuideModal(this)">
+          <div class="guide-image-wrap">
+            <img src="imgs/demoo11.jpg" alt="Flannel Shirt combination" class="guide-image">
+          </div>
+          <h3>Flannel Shirt</h3>
+          <p class="wear-type">Layering-friendly winter casual</p>
+          <p class="lower-wear">Lower wear: Formal pants, chinos, jeans</p>
+          <p class="extra-suggestion">Shoes: Boots | Watch: Dark field watch</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="guide-modal" id="guideModal">
+    <div class="guide-modal-panel">
+      <button class="close-btn" id="closeModalBtn" aria-label="Close details">&times;</button>
+      <div class="modal-image-wrap">
+        <img id="modalImage" src="" alt="" class="modal-image">
+      </div>
+      <p class="modal-label">Upper Wear Guide</p>
+      <h3 id="modalTitle"></h3>
+      <p id="modalType"></p>
+      <div class="modal-divider"></div>
+      <p id="modalLower"></p>
+      <p id="modalExtra"></p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>Luxury menswear direction, category by category.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

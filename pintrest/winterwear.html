@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upper Wear Guide | Winterwear</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand-block">
+        <p class="eyebrow">Luxury Style Directory</p>
+        <h1>Upper Wear Guide</h1>
+        <p class="hero-text">
+          Explore men’s winterwear styles with lower wear, shoes, and watch pairing suggestions.
+        </p>
+      </div>
+
+      <nav class="top-nav">
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tshirts.html">T-Shirts</a></li>
+          <li><a href="shirts.html">Shirts</a></li>
+          <li><a href="jackets.html">Jackets</a></li>
+          <li><a href="hoodies.html">Hoodies</a></li>
+          <li><a href="blazers.html">Blazers</a></li>
+          <li><a href="ethnic.html">Ethnic</a></li>
+          <li><a href="winterwear.html">Winterwear</a></li>
+          <li><a href="sportswear.html">Sportswear</a></li>
+          <li><a href="officewear.html">Office Wear</a></li>
+          <li><a href="streetwear.html">Streetwear</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="guide-main">
+
+    <section class="guide-section" id="winterwear">
+      <div class="section-head">
+        <p class="section-kicker">Section 7</p>
+        <h2>Sweaters & Winterwear</h2>
+        <p>Cold-season upper layers designed for warmth, texture, and refined seasonal dressing.</p>
+      </div>
+
+      <div class="guide-grid">
+        <article class="guide-card" onclick="openGuideModal(this)">
+          <div class="guide-image-wrap">
+            <img src="imgs/demoo25.jpg" alt="Cardigan combination" class="guide-image">
+          </div>
+          <h3>Cardigan</h3>
+          <p class="wear-type">Soft open-layer winter classic</p>
+          <p class="lower-wear">Lower wear: Jeans, wool trousers</p>
+          <p class="extra-suggestion">Shoes: Suede loafers or boots | Watch: Vintage strap watch</p>
+        </article>
+
+        <article class="guide-card" onclick="openGuideModal(this)">
+          <div class="guide-image-wrap">
+            <img src="imgs/demoo26.jpg" alt="Pullover Sweater combination" class="guide-image">
+          </div>
+          <h3>Pullover Sweater</h3>
+          <p class="wear-type">Everyday polished winter basic</p>
+          <p class="lower-wear">Lower wear: Jeans, wool trousers</p>
+          <p class="extra-suggestion">Shoes: Boots | Watch: Clean steel watch</p>
+        </article>
+
+        <article class="guide-card" onclick="openGuideModal(this)">
+          <div class="guide-image-wrap">
+            <img src="imgs/demoo27.jpg" alt="Turtleneck combination" class="guide-image">
+          </div>
+          <h3>Turtleneck</h3>
+          <p class="wear-type">Sophisticated cold-weather essential</p>
+          <p class="lower-wear">Lower wear: Jeans, wool trousers</p>
+          <p class="extra-suggestion">Shoes: Chelsea boots | Watch: Minimal luxury watch</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="guide-modal" id="guideModal">
+    <div class="guide-modal-panel">
+      <button class="close-btn" id="closeModalBtn" aria-label="Close details">&times;</button>
+      <div class="modal-image-wrap">
+        <img id="modalImage" src="" alt="" class="modal-image">
+      </div>
+      <p class="modal-label">Upper Wear Guide</p>
+      <h3 id="modalTitle"></h3>
+      <p id="modalType"></p>
+      <div class="modal-divider"></div>
+      <p id="modalLower"></p>
+      <p id="modalExtra"></p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>Luxury menswear direction, category by category.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

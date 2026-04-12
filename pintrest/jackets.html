@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upper Wear Guide | Jackets</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand-block">
+        <p class="eyebrow">Luxury Style Directory</p>
+        <h1>Upper Wear Guide</h1>
+        <p class="hero-text">
+          Explore men’s jacket styles with lower wear, shoes, and watch pairing suggestions.
+        </p>
+      </div>
+
+      <nav class="top-nav">
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tshirts.html">T-Shirts</a></li>
+          <li><a href="shirts.html">Shirts</a></li>
+          <li><a href="jackets.html">Jackets</a></li>
+          <li><a href="hoodies.html">Hoodies</a></li>
+          <li><a href="blazers.html">Blazers</a></li>
+          <li><a href="ethnic.html">Ethnic</a></li>
+          <li><a href="winterwear.html">Winterwear</a></li>
+          <li><a href="sportswear.html">Sportswear</a></li>
+          <li><a href="officewear.html">Office Wear</a></li>
+          <li><a href="streetwear.html">Streetwear</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="guide-main">
+
+    <section class="guide-section" id="jackets">
+      <div class="section-head">
+        <p class="section-kicker">Section 3</p>
+        <h2>Jackets</h2>
+        <p>Strong outer layers for structure, depth, and seasonal styling.</p>
+      </div>
+
+      <div class="guide-grid">
+        <article class="guide-card" onclick="openGuideModal(this)">
+          <div class="guide-image-wrap">
+            <img src="imgs/demoo12.jpg" alt="Denim Jacket combination" class="guide-image">
+          </div>
+          <h3>Denim Jacket</h3>
+          <p class="wear-type">Classic casual layering piece</p>
+          <p class="lower-wear">Lower wear: Slim jeans, cargos</p>
+          <p class="extra-suggestion">Shoes: Sneakers or boots | Watch: Vintage leather watch</p>
+        </article>
+
+        <article class="guide-card" onclick="openGuideModal(this)">
+          <div class="guide-image-wrap">
+            <img src="imgs/demoo13.jpg" alt="Leather Jacket combination" class="guide-image">
+          </div>
+          <h3>Leather Jacket</h3>
+          <p class="wear-type">Edgy timeless outerwear</p>
+          <p class="lower-wear">Lower wear: Slim jeans, cargos</p>
+          <p class="extra-suggestion">Shoes: Chelsea boots | Watch: Black dial metal watch</p>
+        </article>
+
+        <article class="guide-card" onclick="openGuideModal(this)">
+          <div class="guide-image-wrap">
+            <img src="imgs/demoo14.jpg" alt="Bomber Jacket combination" class="guide-image">
+          </div>
+          <h3>Bomber Jacket</h3>
+          <p class="wear-type">Modern sporty street style</p>
+          <p class="lower-wear">Lower wear: Slim jeans, cargos</p>
+          <p class="extra-suggestion">Shoes: Trainers | Watch: Sport chronograph</p>
+        </article>
+
+        <article class="guide-card" onclick="openGuideModal(this)">
+          <div class="guide-image-wrap">
+            <img src="imgs/demoo15.jpg" alt="Puffer Jacket combination" class="guide-image">
+          </div>
+          <h3>Puffer Jacket</h3>
+          <p class="wear-type">Winter comfort with volume</p>
+          <p class="lower-wear">Lower wear: Slim jeans, cargos</p>
+          <p class="extra-suggestion">Shoes: Chunky sneakers or boots | Watch: Sport watch</p>
+        </article>
+
+        <article class="guide-card" onclick="openGuideModal(this)">
+          <div class="guide-image-wrap">
+            <img src="imgs/demooji.jpg" alt="Varsity Jacket combination" class="guide-image">
+          </div>
+          <h3>Varsity Jacket</h3>
+          <p class="wear-type">Youthful athletic throwback</p>
+          <p class="lower-wear">Lower wear: Slim jeans, cargos</p>
+          <p class="extra-suggestion">Shoes: High-top sneakers | Watch: Youth streetwear watch</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="guide-modal" id="guideModal">
+    <div class="guide-modal-panel">
+      <button class="close-btn" id="closeModalBtn" aria-label="Close details">&times;</button>
+      <div class="modal-image-wrap">
+        <img id="modalImage" src="" alt="" class="modal-image">
+      </div>
+      <p class="modal-label">Upper Wear Guide</p>
+      <h3 id="modalTitle"></h3>
+      <p id="modalType"></p>
+      <div class="modal-divider"></div>
+      <p id="modalLower"></p>
+      <p id="modalExtra"></p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>Luxury menswear direction, category by category.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
