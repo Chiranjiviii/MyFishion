@@ -12,19 +12,28 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
   <header class="site-header">
     <div class="header-inner">
-      <div class="brand-block">
-        <p class="eyebrow">Luxury Style Directory</p>
-        <h1>Upper Wear Guide</h1>
-        <p class="hero-text">
-          Explore men’s sportswear styles with lower wear, shoes, and watch pairing suggestions.
-        </p>
+      <div class="brand-line">
+        <a class="brand-link" href="index.html">
+          <span class="brand-mark" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 18L12 4L19 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8 13H16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="brand-meta">
+            <small>Luxury Style Directory</small>
+            <strong>Upper Wear Guide</strong>
+          </span>
+        </a>
+
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-label="Open menu">☰</button>
       </div>
 
-      <nav class="top-nav">
-        <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
+      <nav class="top-nav" aria-label="Primary">
         <ul class="nav-links" id="navLinks">
           <li><a href="index.html">Home</a></li>
           <li><a href="tshirts.html">T-Shirts</a></li>
@@ -34,7 +43,7 @@
           <li><a href="blazers.html">Blazers</a></li>
           <li><a href="ethnic.html">Ethnic</a></li>
           <li><a href="winterwear.html">Winterwear</a></li>
-          <li><a href="sportswear.html">Sportswear</a></li>
+          <li><a href="sportswear.html" class="active">Sportswear</a></li>
           <li><a href="officewear.html">Office Wear</a></li>
           <li><a href="streetwear.html">Streetwear</a></li>
         </ul>
@@ -42,67 +51,101 @@
     </div>
   </header>
 
-  <main class="guide-main">
+  <main class="guide-main" id="main-content">
+    <section class="page-hero">
+      <div class="page-hero-card">
+        <div>
+          <p class="eyebrow">Section 8</p>
+          <h1 class="page-hero-title">Sportswear</h1>
+          <p class="page-hero-copy">
+            Explore men’s sportswear styles with lower wear, shoes, and watch pairing suggestions.
+          </p>
+        </div>
+
+        <div class="page-hero-meta">
+          <div class="page-meta-card">
+            <span class="hero-stat-label">Category</span>
+            <strong>Athletic & Athleisure</strong>
+            <p>Active upper wear built for training, movement, and modern athletic styling.</p>
+          </div>
+          <div class="page-meta-card">
+            <span class="hero-stat-label">Outfits</span>
+            <strong>3 combinations</strong>
+            <p>Styling ideas with training T‑shirts, track jackets, and sleeveless gym wear plus track pants, joggers, shorts, and sport watches.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="guide-section" id="sportswear">
       <div class="section-head">
-        <p class="section-kicker">Section 8</p>
+        <p class="section-kicker">Category Guide</p>
         <h2>Sportswear</h2>
         <p>Active upper wear built for training, movement, and modern athletic styling.</p>
       </div>
 
       <div class="guide-grid">
-        <article class="guide-card" onclick="openGuideModal(this)">
-          <div class="guide-image-wrap">
-            <img src="imgs/demoo28.jpg" alt="Training T-Shirt combination" class="guide-image">
-          </div>
-          <h3>Training T-Shirt</h3>
+        <article class="guide-card">
+          <button class="image-trigger" type="button" onclick="openGuideModal(this.closest('.guide-card'))" aria-label="Open Training T‑Shirt details">
+            <div class="guide-image-wrap">
+              <img src="imgs/demoo28.jpg" alt="Training T‑Shirt combination" class="guide-image">
+            </div>
+          </button>
+          <h3>Training T‑Shirt</h3>
           <p class="wear-type">Breathable workout essential</p>
           <p class="lower-wear">Lower wear: Track pants, joggers, shorts</p>
           <p class="extra-suggestion">Shoes: Running shoes | Watch: Digital sports watch</p>
         </article>
 
-        <article class="guide-card" onclick="openGuideModal(this)">
-          <div class="guide-image-wrap">
-            <img src="imgs/demoo29.jpg" alt="Track Jacket combination" class="guide-image">
-          </div>
+        <article class="guide-card">
+          <button class="image-trigger" type="button" onclick="openGuideModal(this.closest('.guide-card'))" aria-label="Open Track Jacket details">
+            <div class="guide-image-wrap">
+              <img src="imgs/demoo29.jpg" alt="Track Jacket combination" class="guide-image">
+            </div>
+          </button>
           <h3>Track Jacket</h3>
-          <p class="wear-type">Athletic warm-up outer layer</p>
+          <p class="wear-type">Athletic warm‑up outer layer</p>
           <p class="lower-wear">Lower wear: Track pants, joggers, shorts</p>
           <p class="extra-suggestion">Shoes: Trainers | Watch: Rubber strap sports watch</p>
         </article>
 
-        <article class="guide-card" onclick="openGuideModal(this)">
-          <div class="guide-image-wrap">
-            <img src="imgs/demoo30.jpg" alt="Sleeveless Gym Wear combination" class="guide-image">
-          </div>
+        <article class="guide-card">
+          <button class="image-trigger" type="button" onclick="openGuideModal(this.closest('.guide-card'))" aria-label="Open Sleeveless Gym Wear details">
+            <div class="guide-image-wrap">
+              <img src="imgs/demoo30.jpg" alt="Sleeveless Gym Wear combination" class="guide-image">
+            </div>
+          </button>
           <h3>Sleeveless Gym Wear</h3>
-          <p class="wear-type">Performance-driven gym staple</p>
+          <p class="wear-type">Performance‑driven gym staple</p>
           <p class="lower-wear">Lower wear: Track pants, joggers, shorts</p>
           <p class="extra-suggestion">Shoes: Training shoes | Watch: Smart fitness watch</p>
         </article>
       </div>
     </section>
-
   </main>
 
-  <div class="guide-modal" id="guideModal">
+  <div class="guide-modal" id="guideModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalType">
     <div class="guide-modal-panel">
-      <button class="close-btn" id="closeModalBtn" aria-label="Close details">&times;</button>
+      <button class="close-btn" id="closeModalBtn" type="button" aria-label="Close details">&times;</button>
+
       <div class="modal-image-wrap">
         <img id="modalImage" src="" alt="" class="modal-image">
       </div>
+
       <p class="modal-label">Upper Wear Guide</p>
-      <h3 id="modalTitle"></h3>
-      <p id="modalType"></p>
+      <h3 id="modalTitle" class="modal-title"></h3>
+      <p id="modalType" class="modal-copy"></p>
       <div class="modal-divider"></div>
-      <p id="modalLower"></p>
-      <p id="modalExtra"></p>
+      <p id="modalLower" class="modal-copy"></p>
+      <p id="modalExtra" class="modal-copy"></p>
     </div>
   </div>
 
   <footer class="site-footer">
-    <p>Luxury menswear direction, category by category.</p>
+    <div class="site-footer-inner">
+      <p><strong>Upper Wear Guide</strong> — luxury menswear direction, category by category.</p>
+      <p>Built for category browsing, outfit pairing, and styling inspiration.</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
