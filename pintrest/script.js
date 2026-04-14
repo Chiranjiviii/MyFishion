@@ -29,23 +29,16 @@ if (navLinks) {
 }
 
 function openGuideModal(card) {
-  if (!guideModal || !modalImage || !modalTitle || !modalType || !modalLower || !modalExtra) return;
+  if (!guideModal || !modalImage || !modalTitle || !modalType || !modalLower || !modalExtra || !card) return;
+
   const imageEl = card.querySelector(".guide-image");
   const titleEl = card.querySelector("h3");
   const typeEl = card.querySelector(".wear-type");
   const lowerEl = card.querySelector(".lower-wear");
   const extraEl = card.querySelector(".extra-suggestion");
 
-  if (imageEl) {
-    modalImage.src = imageEl.src;
-    modalImage.alt = imageEl.alt || (titleEl ? titleEl.textContent : "Guide image");
-    modalImage.style.display = "block";
-  } else {
-    modalImage.src = "";
-    modalImage.alt = "";
-    modalImage.style.display = "none";
-  }
-
+  modalImage.src = imageEl ? imageEl.src : "";
+  modalImage.alt = imageEl ? imageEl.alt || "Guide image" : "";
   modalTitle.textContent = titleEl ? titleEl.textContent : "";
   modalType.textContent = typeEl ? typeEl.textContent : "";
   modalLower.textContent = lowerEl ? lowerEl.textContent : "";
@@ -53,12 +46,16 @@ function openGuideModal(card) {
 
   guideModal.classList.add("show");
   document.body.style.overflow = "hidden";
+
+  if (closeModalBtn) {
+    closeModalBtn.focus();
+  }
 }
 
 function closeGuideModal() {
   if (!guideModal) return;
   guideModal.classList.remove("show");
-  document.body.style.overflow = "auto";
+  document.body.style.overflow = "";
 }
 
 if (closeModalBtn) {
@@ -67,7 +64,10 @@ if (closeModalBtn) {
 
 if (guideModal) {
   guideModal.addEventListener("click", (e) => {
-    if (e.target === guideModal) closeGuideModal();
+    const modalPanel = guideModal.querySelector(".guide-modal-panel");
+    if (modalPanel && !modalPanel.contains(e.target)) {
+      closeGuideModal();
+    }
   });
 }
 
