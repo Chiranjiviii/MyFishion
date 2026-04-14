@@ -12,22 +12,30 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
   <header class="site-header">
     <div class="header-inner">
-      <div class="brand-block">
-        <p class="eyebrow">Luxury Style Directory</p>
-        <h1>Upper Wear Guide</h1>
-        <p class="hero-text">
-          Explore men’s T-shirt styles with lower wear, shoes, and watch pairing suggestions.
-        </p>
+      <div class="brand-line">
+        <a class="brand-link" href="index.html">
+          <span class="brand-mark" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 18L12 4L19 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8 13H16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="brand-meta">
+            <small>Luxury Style Directory</small>
+            <strong>Upper Wear Guide</strong>
+          </span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-label="Open menu">☰</button>
       </div>
 
-      <nav class="top-nav">
-        <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
+      <nav class="top-nav" aria-label="Primary">
         <ul class="nav-links" id="navLinks">
           <li><a href="index.html">Home</a></li>
-          <li><a href="tshirts.html">T-Shirts</a></li>
+          <li><a href="tshirts.html" class="active">T-Shirts</a></li>
           <li><a href="shirts.html">Shirts</a></li>
           <li><a href="jackets.html">Jackets</a></li>
           <li><a href="hoodies.html">Hoodies</a></li>
@@ -42,59 +50,94 @@
     </div>
   </header>
 
-  <main class="guide-main">
+  <main class="guide-main" id="main-content">
+    <section class="page-hero">
+      <div class="page-hero-card">
+        <div>
+          <p class="eyebrow">Section 1</p>
+          <h1 class="page-hero-title">T-Shirts</h1>
+          <p class="page-hero-copy">
+            Explore men’s T-shirt styles with lower wear, shoes, and watch pairing suggestions.
+          </p>
+        </div>
+
+        <div class="page-hero-meta">
+          <div class="page-meta-card">
+            <span class="hero-stat-label">Category</span>
+            <strong>Casual Essentials</strong>
+            <p>Easy styling options for everyday, smart-casual, and street-ready looks.</p>
+          </div>
+          <div class="page-meta-card">
+            <span class="hero-stat-label">Outfits</span>
+            <strong>5 combinations</strong>
+            <p>Quick pairing ideas with lower wear, shoes, and watches.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="guide-section">
       <div class="section-head">
-        <p class="section-kicker">Section 1</p>
+        <p class="section-kicker">Category Guide</p>
         <h2>T-Shirts</h2>
-        <p>Simple, versatile upper wear for casual, street, and smart-casual styling.</p>
+        <p>Click any image to open the full preview and outfit details.</p>
       </div>
 
       <div class="guide-grid">
-        <article class="guide-card" onclick="openGuideModal(this)">
-          <div class="guide-image-wrap">
-            <img src="imgs/demoo.jpg" alt="Plain T-shirt combination" class="guide-image">
-          </div>
+        <article class="guide-card">
+          <button class="image-trigger" type="button" onclick="openGuideModal(this.closest('.guide-card'))" aria-label="Open Plain T-shirt details">
+            <div class="guide-image-wrap">
+              <img src="imgs/demoo.jpg" alt="Plain T-shirt combination" class="guide-image">
+            </div>
+          </button>
           <h3>Plain T-shirt</h3>
           <p class="wear-type">Minimal everyday essential</p>
           <p class="lower-wear">Lower wear: Jeans, joggers, shorts, cargos</p>
           <p class="extra-suggestion">Shoes: White sneakers | Watch: Minimal black dial watch</p>
         </article>
 
-        <article class="guide-card" onclick="openGuideModal(this)">
-          <div class="guide-image-wrap">
-            <img src="imgs/demoo2.jpg" alt="Graphic T-shirt combination" class="guide-image">
-          </div>
+        <article class="guide-card">
+          <button class="image-trigger" type="button" onclick="openGuideModal(this.closest('.guide-card'))" aria-label="Open Graphic T-shirt details">
+            <div class="guide-image-wrap">
+              <img src="imgs/demoo2.jpg" alt="Graphic T-shirt combination" class="guide-image">
+            </div>
+          </button>
           <h3>Graphic T-shirt</h3>
           <p class="wear-type">Expressive casual statement</p>
           <p class="lower-wear">Lower wear: Jeans, joggers, shorts, cargos</p>
           <p class="extra-suggestion">Shoes: Chunky sneakers | Watch: Street-style digital watch</p>
         </article>
 
-        <article class="guide-card" onclick="openGuideModal(this)">
-          <div class="guide-image-wrap">
-            <img src="imgs/demoo3.jpg" alt="Oversized T-shirt combination" class="guide-image">
-          </div>
+        <article class="guide-card">
+          <button class="image-trigger" type="button" onclick="openGuideModal(this.closest('.guide-card'))" aria-label="Open Oversized T-shirt details">
+            <div class="guide-image-wrap">
+              <img src="imgs/demoo3.jpg" alt="Oversized T-shirt combination" class="guide-image">
+            </div>
+          </button>
           <h3>Oversized T-shirt</h3>
           <p class="wear-type">Relaxed street-modern silhouette</p>
           <p class="lower-wear">Lower wear: Jeans, chinos, shorts, cargos</p>
           <p class="extra-suggestion">Shoes: High-top sneakers | Watch: Matte sports watch</p>
         </article>
 
-        <article class="guide-card" onclick="openGuideModal(this)">
-          <div class="guide-image-wrap">
-            <img src="imgs/demoo4.jpg" alt="Polo T-shirt combination" class="guide-image">
-          </div>
+        <article class="guide-card">
+          <button class="image-trigger" type="button" onclick="openGuideModal(this.closest('.guide-card'))" aria-label="Open Polo T-shirt details">
+            <div class="guide-image-wrap">
+              <img src="imgs/demoo4.jpg" alt="Polo T-shirt combination" class="guide-image">
+            </div>
+          </button>
           <h3>Polo T-shirt</h3>
           <p class="wear-type">Clean smart-casual option</p>
           <p class="lower-wear">Lower wear: Jeans, joggers, shorts, cargos</p>
           <p class="extra-suggestion">Shoes: Loafers or clean sneakers | Watch: Silver dress watch</p>
         </article>
 
-        <article class="guide-card" onclick="openGuideModal(this)">
-          <div class="guide-image-wrap">
-            <img src="imgs/demoo5.jpg" alt="Henley T-shirt combination" class="guide-image">
-          </div>
+        <article class="guide-card">
+          <button class="image-trigger" type="button" onclick="openGuideModal(this.closest('.guide-card'))" aria-label="Open Henley T-shirt details">
+            <div class="guide-image-wrap">
+              <img src="imgs/demoo5.jpg" alt="Henley T-shirt combination" class="guide-image">
+            </div>
+          </button>
           <h3>Henley T-shirt</h3>
           <p class="wear-type">Textured casual upgrade</p>
           <p class="lower-wear">Lower wear: Jeans, joggers, shorts, cargos</p>
@@ -104,23 +147,28 @@
     </section>
   </main>
 
-  <div class="guide-modal" id="guideModal">
+  <div class="guide-modal" id="guideModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalType">
     <div class="guide-modal-panel">
-      <button class="close-btn" id="closeModalBtn" aria-label="Close details">&times;</button>
+      <button class="close-btn" id="closeModalBtn" type="button" aria-label="Close details">&times;</button>
+
       <div class="modal-image-wrap">
         <img id="modalImage" src="" alt="" class="modal-image">
       </div>
+
       <p class="modal-label">Upper Wear Guide</p>
-      <h3 id="modalTitle"></h3>
-      <p id="modalType"></p>
+      <h3 id="modalTitle" class="modal-title"></h3>
+      <p id="modalType" class="modal-copy"></p>
       <div class="modal-divider"></div>
-      <p id="modalLower"></p>
-      <p id="modalExtra"></p>
+      <p id="modalLower" class="modal-copy"></p>
+      <p id="modalExtra" class="modal-copy"></p>
     </div>
   </div>
 
   <footer class="site-footer">
-    <p>Luxury menswear direction, category by category.</p>
+    <div class="site-footer-inner">
+      <p><strong>Upper Wear Guide</strong> — luxury menswear direction, category by category.</p>
+      <p>Built for category browsing, outfit pairing, and styling inspiration.</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
