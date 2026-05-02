@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shop | Upper Wear Guide</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .shop-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .shop-card {
+      background: #fff;
+      border-radius: 14px;
+      overflow: hidden;
+      transition: 0.3s;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+
+    .shop-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .shop-card img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+    }
+
+    .shop-content {
+      padding: 14px;
+    }
+
+    .shop-title {
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .shop-desc {
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .buy-btn {
+      display: inline-block;
+      background: #d4af6a;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    .buy-btn:hover {
+      background: #b89650;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand-line">
+      <a class="brand-link" href="index.html">
+        <span class="brand-meta">
+          <small>Luxury Style Directory</small>
+          <strong>Upper Wear Guide</strong>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle">☰</button>
+    </div>
+
+    <nav class="top-nav">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+            <li><a href="tshirts.html">T-Shirts</a></li>
+            <li><a href="shirts.html">Shirts</a></li>
+            <li><a href="jackets.html">Jackets</a></li>
+            <li><a href="hoodies.html">Hoodies</a></li>
+            <li><a href="blazers.html">Blazers</a></li>
+            <li><a href="ethnic.html">Ethnic</a></li>
+            <li><a href="winterwear.html">Winterwear</a></li>
+            <li><a href="sportswear.html">Sportswear</a></li>
+            <li><a href="officewear.html">Office Wear</a></li>
+            <li><a href="streetwear.html">Streetwear</a></li>
+        <li><a href="shop.html" class="active">Shop</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="guide-main">
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="page-hero-card">
+      <div>
+        <p class="eyebrow">Affiliate Store</p>
+        <h1 class="page-hero-title">Shop Outfits</h1>
+        <p class="page-hero-copy">
+          Explore handpicked outfits with direct purchase links.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="guide-section">
+    <div class="section-head">
+      <p class="section-kicker">Featured</p>
+      <h2>21 Outfit Picks</h2>
+      <p>Curated products with styling guidance.</p>
+    </div>
+
+    <div class="shop-grid">
+
+      <div class="shop-card">
+        <img src="imgs/shop1.jpg">
+        <div class="shop-content">
+          <div class="shop-title">White Minimal Shirt</div>
+          <div class="shop-desc">Best with black jeans & sneakers.</div>
+          <a href="AFFILIATE_LINK" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="shop-card">
+        <img src="imgs/shop2.jpg">
+        <div class="shop-content">
+          <div class="shop-title">Oversized Black Tee</div>
+          <div class="shop-desc">Perfect streetwear look with cargos.</div>
+          <a href="AFFILIATE_LINK" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- COPY THIS BLOCK UNTIL 21 ITEMS -->
+
+      <div class="shop-card">
+        <img src="imgs/shop3.jpg">
+        <div class="shop-content">
+          <div class="shop-title">Denim Jacket</div>
+          <div class="shop-desc">Layer with white tee & jeans.</div>
+          <a href="AFFILIATE_LINK" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="shop-card">
+        <img src="imgs/shop3.jpg">
+        <div class="shop-content">
+          <div class="shop-title">Denim Jacket</div>
+          <div class="shop-desc">Layer with white tee & jeans.</div>
+          <a href="AFFILIATE_LINK" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="shop-card">
+        <img src="imgs/shop3.jpg">
+        <div class="shop-content">
+          <div class="shop-title">Denim Jacket</div>
+          <div class="shop-desc">Layer with white tee & jeans.</div>
+          <a href="AFFILIATE_LINK" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="shop-card">
+        <img src="imgs/shop3.jpg">
+        <div class="shop-content">
+          <div class="shop-title">Denim Jacket</div>
+          <div class="shop-desc">Layer with white tee & jeans.</div>
+          <a href="AFFILIATE_LINK" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="shop-card">
+        <img src="imgs/shop3.jpg">
+        <div class="shop-content">
+          <div class="shop-title">Denim Jacket</div>
+          <div class="shop-desc">Layer with white tee & jeans.</div>
+          <a href="AFFILIATE_LINK" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="shop-card">
+        <img src="imgs/shop3.jpg">
+        <div class="shop-content">
+          <div class="shop-title">Denim Jacket</div>
+          <div class="shop-desc">Layer with white tee & jeans.</div>
+          <a href="AFFILIATE_LINK" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="shop-card">
+        <img src="imgs/shop3.jpg">
+        <div class="shop-content">
+          <div class="shop-title">Denim Jacket</div>
+          <div class="shop-desc">Layer with white tee & jeans.</div>
+          <a href="AFFILIATE_LINK" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="shop-card">
+        <img src="imgs/shop3.jpg">
+        <div class="shop-content">
+          <div class="shop-title">Denim Jacket</div>
+          <div class="shop-desc">Layer with white tee & jeans.</div>
+          <a href="AFFILIATE_LINK" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="shop-card">
+        <img src="imgs/shop3.jpg">
+        <div class="shop-content">
+          <div class="shop-title">Denim Jacket</div>
+          <div class="shop-desc">Layer with white tee & jeans.</div>
+          <a href="AFFILIATE_LINK" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="shop-card">
+        <img src="imgs/shop3.jpg">
+        <div class="shop-content">
+          <div class="shop-title">Denim Jacket</div>
+          <div class="shop-desc">Layer with white tee & jeans.</div>
+          <a href="AFFILIATE_LINK" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="shop-card">
+        <img src="imgs/shop3.jpg">
+        <div class="shop-content">
+          <div class="shop-title">Denim Jacket</div>
+          <div class="shop-desc">Layer with white tee & jeans.</div>
+          <a href="AFFILIATE_LINK" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="shop-card">
+        <img src="imgs/shop3.jpg">
+        <div class="shop-content">
+          <div class="shop-title">Denim Jacket</div>
+          <div class="shop-desc">Layer with white tee & jeans.</div>
+          <a href="AFFILIATE_LINK" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="shop-card">
+        <img src="imgs/shop3.jpg">
+        <div class="shop-content">
+          <div class="shop-title">Denim Jacket</div>
+          <div class="shop-desc">Layer with white tee & jeans.</div>
+          <a href="AFFILIATE_LINK" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="shop-card">
+        <img src="imgs/shop3.jpg">
+        <div class="shop-content">
+          <div class="shop-title">Denim Jacket</div>
+          <div class="shop-desc">Layer with white tee & jeans.</div>
+          <a href="AFFILIATE_LINK" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="shop-card">
+        <img src="imgs/shop3.jpg">
+        <div class="shop-content">
+          <div class="shop-title">Denim Jacket</div>
+          <div class="shop-desc">Layer with white tee & jeans.</div>
+          <a href="AFFILIATE_LINK" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="shop-card">
+        <img src="imgs/shop3.jpg">
+        <div class="shop-content">
+          <div class="shop-title">Denim Jacket</div>
+          <div class="shop-desc">Layer with white tee & jeans.</div>
+          <a href="AFFILIATE_LINK" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="shop-card">
+        <img src="imgs/shop3.jpg">
+        <div class="shop-content">
+          <div class="shop-title">Denim Jacket</div>
+          <div class="shop-desc">Layer with white tee & jeans.</div>
+          <a href="AFFILIATE_LINK" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="shop-card">
+        <img src="imgs/shop3.jpg">
+        <div class="shop-content">
+          <div class="shop-title">Denim Jacket</div>
+          <div class="shop-desc">Layer with white tee & jeans.</div>
+          <a href="AFFILIATE_LINK" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="shop-card">
+        <img src="imgs/shop3.jpg">
+        <div class="shop-content">
+          <div class="shop-title">Denim Jacket</div>
+          <div class="shop-desc">Layer with white tee & jeans.</div>
+          <a href="AFFILIATE_LINK" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <p><strong>Upper Wear Guide</strong> — curated affiliate outfits.</p>
+  </div>
+</footer>
+
+</body>
+</html>
