@@ -15,16 +15,45 @@
   <a class="skip-link" href="#main-content">Skip to content</a>
 
   <div class="site-shell">
-    <header class="site-header">
+
+    <!-- HEADER -->
+    <header class="site-header" style="position:relative;">
       <div class="header-inner">
+
+        <!-- LOGO TOP LEFT -->
+        <div style="position:absolute; top:10px; left:10px; z-index:1000;">
+          <svg 
+            width="240" 
+            height="60" 
+            viewBox="0 0 240 60" 
+            xmlns="http://www.w3.org/2000/svg"
+            aria-label="Upper Wear Guide | Just Classic"
+          >
+            <style>
+              .primary-text {
+                font-family: "Inter", "Helvetica Neue", sans-serif;
+                font-weight: 600;
+                font-size: 12px;
+                fill: #d4af6a;
+              }
+              .tagline-text {
+                font-family: "Inter", "Helvetica Neue", sans-serif;
+                font-weight: 400;
+                font-size: 9px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                fill: #666;
+              }
+            </style>
+
+            <text x="12" y="26" class="primary-text">Upper Wear Guide</text>
+            <text x="12" y="40" class="tagline-text">Just Classic</text>
+
+          </svg>
+        </div>
+
         <div class="brand-line">
           <a class="brand-link" href="index.html">
-            <span class="brand-mark" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 18L12 4L19 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M8 13H16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-              </svg>
-            </span>
             <span class="brand-meta">
               <small>Luxury Style Directory</small>
               <strong>Upper Wear Guide</strong>
@@ -47,10 +76,14 @@
             <li><a href="sportswear.html">Sportswear</a></li>
             <li><a href="officewear.html">Office Wear</a></li>
             <li><a href="streetwear.html">Streetwear</a></li>
+            <li><a href="shop.html">Shop</a></li>
           </ul>
         </nav>
       </div>
     </header>
+
+
+    <!-- REST OF YOUR CODE EXACT SAME -->
 
     <main class="guide-main" id="main-content">
       <section class="hero-grid">
